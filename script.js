@@ -124,3 +124,35 @@ function addRipple(e) {
   setTimeout(() => circle.remove(), 600);
 }
 document.querySelectorAll('.ripple').forEach(btn => btn.addEventListener('click', addRipple));
+
+
+// Newsletter demo interaction
+const newsletterForm = document.getElementById('newsletterForm');
+const newsletterEmail = document.getElementById('newsletterEmail');
+const newsletterNote = document.getElementById('newsletterNote');
+if (newsletterForm && newsletterEmail && newsletterNote) {
+  newsletterForm.addEventListener('submit', e => {
+    e.preventDefault();
+    newsletterNote.textContent = `Subscribed: ${newsletterEmail.value}`;
+    newsletterForm.reset();
+  });
+}
+
+// Countdown utility for exams page
+const countdown = document.getElementById('countdown');
+if (countdown) {
+  const target = new Date('2026-05-23T09:00:00Z').getTime();
+  const tick = () => {
+    const diff = target - Date.now();
+    if (diff <= 0) {
+      countdown.textContent = 'Started';
+      return;
+    }
+    const d = Math.floor(diff / 86400000);
+    const h = Math.floor((diff % 86400000) / 3600000);
+    const m = Math.floor((diff % 3600000) / 60000);
+    countdown.textContent = `${d}d ${h}h ${m}m`;
+  };
+  tick();
+  setInterval(tick, 60000);
+}

@@ -111,3 +111,9 @@ body {
 .contact-form { max-width: 700px; margin: 0 auto; display: grid; gap: .9rem; padding: 1.3rem; }
 .contact-form label { display: grid; gap: .5rem; color: var(--text-gray); }
 .contact-form input, .contact-form textarea { background: #ffffff10; border: 1px solid #ffffff29; color: #fff; border-radius: 10px; padding: .75rem .9rem; font: inherit; }
+
+
+.newsletter { max-width: 760px; margin: 0 auto; padding: 1.1rem; display: grid; grid-template-columns: 1fr auto; gap: .8rem; }
+.newsletter input { background: #ffffff12; border: 1px solid #ffffff2a; color: #fff; border-radius: 12px; padding: .8rem .9rem; font: inherit; }
+.newsletter-note { text-align: center; margin-top: .75rem; color: #6ee7b7; min-height: 24px; }
+@media (max-width: 640px) { .newsletter { grid-template-columns: 1fr; } }
