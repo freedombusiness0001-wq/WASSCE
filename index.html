@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WAEC Prep - Learn Smarter, Score Higher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-effects" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="grid-overlay"></span>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-wrapper">
+      <a href="#home" class="logo">WAEC<span>Prep</span></a>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#subjects" class="nav-link">Subjects</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#dashboard" class="nav-link">Dashboard</a>
+        <a href="#quiz" class="nav-link">Quiz</a>
+        <a href="#testimonials" class="nav-link">Reviews</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#" class="btn btn-sm ripple">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-layout">
+        <div class="hero-text reveal">
+          <p class="badge">Trusted by 25,000+ students</p>
+          <h1>Master WAEC Exams with <span>Confidence</span></h1>
+          <p class="sub">Practice real exam questions, personalized quizzes, analytics dashboard, and exam simulations designed to boost your score.</p>
+          <div class="hero-actions">
+            <a href="#subjects" class="btn ripple">Start Learning</a>
+            <a href="#dashboard" class="btn btn-ghost ripple">See Dashboard</a>
+          </div>
+          <div class="stats">
+            <div><h3 class="counter" data-target="25000">0</h3><p>Students</p></div>
+            <div><h3 class="counter" data-target="1200">0</h3><p>Questions</p></div>
+            <div><h3 class="counter" data-target="98">0</h3><p>Success %</p></div>
+          </div>
+        </div>
+        <div class="hero-card reveal delay-1">
+          <div class="glass panel">
+            <h3>Weekly Progress</h3>
+            <div class="progress-wrap">
+              <div class="progress-label"><span>Biology</span><span>84%</span></div>
+              <div class="track"><div class="bar w84"></div></div>
+              <div class="progress-label"><span>Mathematics</span><span>76%</span></div>
+              <div class="track"><div class="bar w76"></div></div>
+              <div class="progress-label"><span>English</span><span>90%</span></div>
+              <div class="track"><div class="bar w90"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="subjects">
+      <div class="container">
+        <h2 class="section-title reveal">Popular Subjects</h2>
+        <div class="cards-grid">
+          <article class="subject-card reveal"><h3>Mathematics</h3><p>Algebra, geometry, and problem-solving drills.</p></article>
+          <article class="subject-card reveal delay-1"><h3>English Language</h3><p>Comprehension, lexis, structure, and essay mastery.</p></article>
+          <article class="subject-card reveal delay-2"><h3>Biology</h3><p>Cell structure, genetics, ecology, and practical prep.</p></article>
+          <article class="subject-card reveal"><h3>Chemistry</h3><p>Organic, physical, and past question simulations.</p></article>
+          <article class="subject-card reveal delay-1"><h3>Physics</h3><p>Mechanics, electricity, waves, and exam techniques.</p></article>
+          <article class="subject-card reveal delay-2"><h3>Economics</h3><p>Micro, macro, graphs, and data interpretation practice.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <h2 class="section-title reveal">Features Built for Results</h2>
+        <div class="feature-grid">
+          <article class="feature-card reveal"><h3>Timed Practice</h3><p>Simulate exam pressure and improve speed with timer controls.</p></article>
+          <article class="feature-card reveal delay-1"><h3>Performance Analytics</h3><p>Track weak areas and gain actionable score recommendations.</p></article>
+          <article class="feature-card reveal delay-2"><h3>Adaptive Quizzes</h3><p>Difficulty adjusts based on your performance and learning curve.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="dashboard">
+      <div class="container">
+        <h2 class="section-title reveal">Student Dashboard Preview</h2>
+        <div class="dashboard glass reveal">
+          <div class="dash-top">
+            <div class="metric"><h4>Mock Score</h4><p>84%</p></div>
+            <div class="metric"><h4>Streak</h4><p>16 Days</p></div>
+            <div class="metric"><h4>Completion</h4><p>72%</p></div>
+          </div>
+          <div class="dash-chart">
+            <div class="chart-line"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="quiz">
+      <div class="container">
+        <h2 class="section-title reveal">Quick Quiz</h2>
+        <div class="quiz-box glass reveal">
+          <p id="question">Loading question...</p>
+          <div id="answers" class="answer-list"></div>
+          <button id="nextBtn" class="btn ripple">Next Question</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="testimonials">
+      <div class="container">
+        <h2 class="section-title reveal">What Students Say</h2>
+        <div class="testimonial-grid">
+          <article class="testimonial reveal"><p>"My WAEC score improved massively in just 6 weeks!"</p><h4>- Amina O.</h4></article>
+          <article class="testimonial reveal delay-1"><p>"The dashboard helped me focus on my weak subjects."</p><h4>- David K.</h4></article>
+          <article class="testimonial reveal delay-2"><p>"Looks premium and studying feels fun every day."</p><h4>- Chioma N.</h4></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <h2 class="section-title reveal">Frequently Asked Questions</h2>
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button class="faq-question">Is WAEC Prep free to use?</button>
+            <div class="faq-answer"><p>Yes, core quizzes and study tools are free with optional premium bundles.</p></div>
+          </div>
+          <div class="faq-item reveal delay-1">
+            <button class="faq-question">Can I study on mobile?</button>
+            <div class="faq-answer"><p>Absolutely. The platform is fully responsive for phones, tablets, and desktops.</p></div>
+          </div>
+          <div class="faq-item reveal delay-2">
+            <button class="faq-question">Do you include past questions?</button>
+            <div class="faq-answer"><p>Yes. We curate WAEC-style and past-question inspired practice sets regularly.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <p>© 2026 WAECPrep. All rights reserved.</p>
+      <a href="#home">Back to Top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
