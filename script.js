@@ -1,7 +1,9 @@
 // Mobile nav toggle
 const mobileToggle = document.getElementById('mobileToggle');
 const navLinks = document.getElementById('navLinks');
-mobileToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+if (mobileToggle && navLinks) {
+  mobileToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+}
 
 // Active nav links + smooth close mobile
 document.querySelectorAll('.nav-link').forEach(link => {
@@ -101,11 +103,13 @@ function loadQuiz() {
   });
 }
 
-nextBtn.addEventListener('click', () => {
-  currentQuestion = (currentQuestion + 1) % quizData.length;
+if (questionEl && answersEl && nextBtn) {
+  nextBtn.addEventListener('click', () => {
+    currentQuestion = (currentQuestion + 1) % quizData.length;
+    loadQuiz();
+  });
   loadQuiz();
-});
-loadQuiz();
+}
 
 // Ripple effect on buttons
 function addRipple(e) {
